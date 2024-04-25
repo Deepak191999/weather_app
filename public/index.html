@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>app.js vala</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,23 +16,19 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="container">
-      
-      
-      <div class="card mx-auto" style="width: 30rem">
+      <div class="card mx-auto" style="width:40rem">
         <div class="card-body">
           <div class="search">
-          
-            <input class="inp " type="text" placeholder="Enter City Name" />
+            <input class="inp" type="text" placeholder="Enter City Name" />
             <!-- <button><img src="./images/search.png" alt=""></button> -->
             <img class="search-icon ms-3" src="./images/search.png" alt="" />
           </div>
-
-
 
           <!-- --------------main------------------------------ -->
           <img src="./images/drizzle.png" class="weatherImg" alt="" />
@@ -41,21 +37,49 @@
 
           <div class="row d-flex justify-content-between mt-5">
             <div class="col col-md-6 d-flex flex-row humidity">
-              <div class="me-3"><img src="./images/humidity.png" class="img-humid-wind" alt="" /></div>
+              <div class="me-3">
+                <img
+                  src="./images/humidity.png"
+                  class="img-humid-wind"
+                  alt=""
+                />
+              </div>
               <div>
                 <p class="mt-2 humidPercent"></p>
                 <p>Humidity</p>
               </div>
             </div>
-            <div class="col col-md-6 wind d-flex flex-row ">
+            <div class="col col-md-6 wind d-flex flex-row">
               <div class="me-3">
-              <img src="./images/wind.png" class="img-humid-wind" alt="" /></div>
+                <img src="./images/wind.png" class="img-humid-wind" alt="" />
+              </div>
               <div>
-              <p class="mt-2 windSpeed"></p>
-              <p>Wind Speed</p></div>
+                <p class="mt-2 windSpeed"></p>
+                <p>Wind Speed</p>
+              </div>
             </div>
           </div>
           <!-- </div> -->
+
+          <div class="row">
+            <div class="col">
+              <h1>Next Five Days Weather</h1>
+            </div>
+          </div>
+          <div class="row justify-content-between mx-auto align-items-center text-center" style="width: 100%;">
+            <div class="col-md-2 d-flex flex-column align-items-center ">
+              <img src="./images/drizzle.png" class="weatherImg1" alt="" />
+              <h6 class="temp-maths1"></h6></div>
+            <div class="col-md-2 d-flex flex-column align-items-center"> <img src="./images/drizzle.png" class="weatherImg2" alt="" />
+              <h6 class="temp-maths2"></h6></div>
+            <div class="col-md-2 d-flex flex-column align-items-center"> <img src="./images/drizzle.png" class="weatherImg3" alt="" />
+              <h6 class="temp-maths3"></h6></div>
+            <div class="col-md-2 d-flex flex-column align-items-center"> <img src="./images/drizzle.png" class="weatherImg4" alt="" />
+              <h6 class="temp-maths4"></h6></div>
+            <div class="col-md-2 d-flex flex-column align-items-center"> <img src="./images/drizzle.png" class="weatherImg5" alt="" />
+              <h6 class="temp-maths5"></h6></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

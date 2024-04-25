@@ -1,0 +1,81 @@
+.card
+{
+    margin-top: 50px;
+    /* margin: 0 auto; */
+    
+
+      /* background: linear-gradient(to bottom, #00008B, #87CEEB); */
+      background: linear-gradient(to bottom, #2b2bd3, #87CEEB);
+      /* background: linear-gradient(to bottom, #808080, white); */
+    
+    
+    
+    
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    padding:  20px 2px;
+}
+.search input
+{
+ padding: 10px;
+ border-radius:30px;
+ width:27rem
+}
+.search-icon{
+    height: 40px;
+    
+}
+.card-body{
+    margin: 0 auto;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.weatherImg{
+    display: block;
+    margin: 0 auto;
+    height: 8rem;
+  }
+  .weatherImg1,.weatherImg2,.weatherImg3,.weatherImg4,.weatherImg5{
+    height: 5rem;
+  }
+
+  .temp-maths,
+  .city {
+    text-align: center;
+  }
+
+  .temp-maths{
+    font-size: 90px;
+  }
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+/* -------------------------------------------------------- */
+/* .weather-img,.temp-maths,.city
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.temp-maths
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.img-humid-wind
+{
+  height: 60px;
+  width: 50px;
+}
